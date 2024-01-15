@@ -12,26 +12,14 @@ html {
 }
 
 img,
-picture,
-video,
-canvas,
-svg {
+picture {
      display: block;
      max-width: 100%;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-     overflow-wrap: break-word;
-}
-
-li {
-     list-style: none;
+ul {
+     list-style-type: none;
+     /* Make sure it's not set to 'none' */
 }
 
 a {
@@ -40,7 +28,202 @@ a {
 }
 
 button,
+select,
 input {
      border: none;
      outline: none;
+}
+
+select {
+     background: 0;
+     text-align: right;
+}
+
+button {
+     background-color: #FF5400;
+}
+
+body {
+
+     font-family: "Mulish",
+          sans-serif;
+}
+
+/* General */
+.container {
+     max-width: 90%;
+     margin: 3rem auto;
+}
+
+.yellow {
+     color: #FF5400;
+}
+
+/* Navbar */
+.nav_container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 3rem;
+}
+
+.nav_logo {
+     display: flex;
+     align-items: center;
+     gap: .65rem;
+}
+
+.nav_logo h1 {
+     font-size: 3.25rem;
+     font-weight: 800;
+}
+
+.nav_menu ul {
+     display: flex;
+}
+
+.nav_menu ul li a {
+     font-size: 1.85rem;
+     margin-left: 2.5rem;
+     font-weight: 400;
+}
+
+.mobile_menu {
+     display: none;
+}
+
+/* Hero section  */
+.hero_container {
+     border-radius: 16px;
+     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+          url("Images/bridge.png");
+     max-width: 1170px;
+     min-height: 500px;
+     color: white;
+
+
+}
+
+.hero_content {
+     margin: 12rem 17rem;
+     max-width: 800px;
+}
+
+.hero_content h1 {
+     font-size: 6rem;
+     margin-bottom: 2rem;
+     font-weight: 800;
+text-align: center;
+}
+
+.hero_content p {
+     font-size: 1.6rem;
+     /* margin-left: 20rem; */
+     text-align: center;
+     margin-bottom: 4rem;
+}
+
+.input_content {
+     border-radius: 8px;
+     background: rgba(255, 255, 255, 0.30);
+     /* margin: 12rem 17rem;
+     max-width: 800px; */
+     /* display: flex;
+     align-items: center;
+     justify-content: space-between; */
+     /* margin-left: 20rem; */
+     max-width: 800px;
+     height: 8rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.input_content select{
+     width: 10rem;
+}
+.input_content input{
+     width: 17rem;
+     padding: 1.5rem 0;
+     margin-left: 2rem;
+     display: block;
+}
+
+
+
+/* 
+< !-- Popular Section -->
+*/
+
+.popular_container{
+     margin-top: 5rem;
+     margin-bottom: 3rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.popular_content,
+.popular_img{
+     max-width: 50%;
+}
+.popular_content h1{
+     font-size: 3.85rem;
+     margin: 2rem 0;
+}
+.popular_content p{
+     font-size: 1.65rem;
+     margin: 2rem 0;
+}
+.popular_content ul,
+.popular_content li,
+.popular_content p{
+     font-weight: 400;
+}
+.popular_content ul{
+ 
+     list-style-type: inherit;
+          list-style-position: inside;
+          padding: 1rem;
+}
+.btn_2{
+     padding: 1.5rem 3rem;
+     border-radius: .85rem;
+     margin-top: 3rem;
+}
+.btn_2 a{
+     font-size: 2rem;
+font-weight: 800;
+color: white;
+}
+.popular_content ul li{
+     font-size: 1.65rem;
+}
+
+.popular_img{
+     margin-bottom:2rem;
+     margin-top:2rem;
+}
+
+/* Responsive */
+@media screen and (max-width:600px) {
+     .nav_menu {
+          display: none;
+     }
+
+     .mobile_menu {
+          display: block;
+     }
+
+
+
+          /* <!-- Popular Section --> */
+.popular_container{
+     flex-direction: column;
+}
+.popular_content h1{
+     font-size: 2.2rem;
+}
+.popular_content,
+.popular_img {
+     max-width: 100%;
+}
 }
