@@ -381,6 +381,33 @@ padding:1.5rem ;
           /* < !-- footer section --> */
           footer{
                background: rgba(19, 19, 24, 0.05);
+               margin-top: 8rem;
+               min-height: 45rem;
+          }
+          .footer_content p{
+               text-align: center;
+               margin: 2rem 0;
+               font-size: 1.6rem;
+          }
+          .logo,
+          .social {
+               display:flex;
+               justify-content: center;
+               align-items: center;
+               gap: 2rem;
+               margin-bottom: 4rem;
+          }
+          .footer_content hr{
+              width: 50%;
+              margin: 0 auto;
+          }
+          .logo{
+               margin-top: 7rem;
+          }
+          footer p{
+               font-size: 1.6rem;
+               margin-top: 4rem;
+               text-align: center;
           }
 
 /* Responsive */
