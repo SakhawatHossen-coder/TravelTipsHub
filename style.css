@@ -177,6 +177,7 @@ body {
      padding: 1.5rem 3rem;
      margin-left: 2rem;
      border-radius: 8px;
+     cursor: pointer;
 }
 
 .btn_primary a {
@@ -259,6 +260,7 @@ body {
 /* < !-- Destination --> */
 .destination_content {
      margin-top: 3rem;
+     text-align: center;
 }
 
 .destination_content h1 {
@@ -287,8 +289,25 @@ body {
 
 }
 
-.gridimg2 {
+/* .x_special img .gridimg2{
      object-fit: initial;
+} */
+#center_position,
+#center_position2 {
+     position: relative;
+}
+
+#center_position h1,
+#center_position2 h1 {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%);
+     color: white;
+}
+
+#center_position2 img {
+     height: 100%;
 }
 
 /* 
@@ -389,7 +408,8 @@ body {
 .deal_flex {
      display: flex;
 }
-.deal_text{
+
+.deal_text {
      text-align: center;
 }
 
@@ -408,6 +428,18 @@ body {
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
+}
+
+.deals_container .deal_btn {
+     margin-top: 3rem;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+
+}
+
+.deal_btn a {
+     text-align: center;
 }
 
 .deal_content,
@@ -494,11 +526,25 @@ p {
 .text-content p {
      font-size: 1.45rem;
 }
+                    /* < !-- Video section --> */
+.video_container{
+     display: flex;
 
+}
+.video_content h1{
+     font-size: 3.8rem;
+}
+.video_content p{
+     font-size: 1.65rem;
+     margin: 3rem .5rem;
+}
+.see_btn{
+     margin: 3rem .5rem;
+}
 /* newsletter */
 .newsletter {
      display: flex;
-     justify-content: space-evenly;
+     justify-content: space-between;
      gap: 1rem;
 }
 
@@ -643,11 +689,11 @@ footer p {
           padding: 1.5rem 18rem;
           margin-bottom: 1rem;
      } */
-     .find_btn{
+     .find_btn {
           margin-top: 1rem;
           margin-bottom: 1rem;
           /* padding: 2rem 15rem; */
-     width: 90%;
+          width: 90%;
      }
 
      /* <!-- Popular Section --> */
@@ -657,7 +703,8 @@ footer p {
      .img_grid1,
      .img_grid2,
      .img_grid3,
-     .deal_flex {
+     .deal_flex,
+     .video_container {
           flex-direction: column;
      }
 
@@ -715,17 +762,23 @@ footer p {
           padding: 0;
      }
 
+     #center_position2 img {
+          width: 90.5%;
+     }
+
      .items {
           flex-direction: column;
      }
-    
-  
-     .deal_content,.deal_content2{
+
+
+     .deal_content,
+     .deal_content2 {
           max-width: 90%;
-        margin: 1rem auto;
-        padding: 1rem 2rem;
+          margin: 1rem auto;
+          padding: 1rem 2rem;
      }
-     .book-btn{
+
+     .book-btn {
           padding: 1rem 2rem;
      }
 }
