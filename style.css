@@ -634,14 +634,20 @@ footer p {
      .div img {
           /* top: 3rem;
           right: 2.5rem; */
-          top: 5%;
-          right: 5.8%;
+          top: 50%;
+          right: 8%;
      }
 
-     .btn_primary {
+     /* .btn_primary {
           margin-top: 1rem;
           padding: 1.5rem 18rem;
           margin-bottom: 1rem;
+     } */
+     .find_btn{
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          /* padding: 2rem 15rem; */
+     width: 90%;
      }
 
      /* <!-- Popular Section --> */
